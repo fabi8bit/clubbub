@@ -38,7 +38,11 @@ document.addEventListener("DOMContentLoaded", function() {
 function setupStory() {
 
 }
-
+/**
+ * buttonScroll function get the buttonType as Input.
+ * buttonType correspond to the id attribute of the html element.
+ * this function allows to scroll through the various option of the button(buttonType) clicked 
+ */
 function buttonScroll(buttonType) {
     let thisButton = document.getElementById(buttonType);
     let thisArr = "";
