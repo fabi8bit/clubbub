@@ -16,6 +16,8 @@ document.addEventListener("DOMContentLoaded", function() {
         button.addEventListener("click", function() {
             if (this.getAttribute("id") === "play") {
                 alert(`You clicked ${this.getAttribute("id")}!`);
+            } else if (this.getAttribute("id") === "shuffle") {
+                shuffle();
             } else {
                 let buttonType = this.getAttribute("id");
                 buttonScroll(buttonType);
@@ -30,13 +32,28 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 /**
- * Set initial state for the button of the choice-area
+ * Set initial state for the buttons of the choice-area
  */
 function setInitialState() {
     let choices = document.getElementsByClassName('choice');
-    console.log(choices[0].innerHTML);
+    // console.log(choices[0].innerHTML);
     for (let i=0 ; i<choices.length ; i++) {
         choices[i].innerHTML = selection[i][0];
+        
+    }
+}
+
+/**
+ * the function shuffle generate a random combination for the choice buttons.
+ */
+function shuffle() {
+    let choices = document.getElementsByClassName('choice');
+    for (let i=0 ; i<choices.length ; i++) {
+        let randomIndex = Math.floor(Math.random() * 3);
+        console.log(choices[i]);
+        console.log(randomIndex);
+        choices[i].innerHTML = selection[i][randomIndex];
+        
         
     }
 }
@@ -62,9 +79,10 @@ function buttonScroll(buttonType) {
         thisArr = genreArr;
     } else if (thisButton === environment) {
         thisArr = environmentArr;
-    }
+    } 
     
-    console.log(heroArr.length-1);
+    
+    
     
     parseInt(dataSelector++);
     
@@ -82,9 +100,7 @@ function buttonScroll(buttonType) {
 
 }
 
-function shuffle() {
 
-}
 
 function createStory() {
     
