@@ -23,21 +23,30 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
     }
-//Set initial state for the button of the choice-area
+    setInitialState();
+    
+
+
+});
+
+/**
+ * Set initial state for the button of the choice-area
+ */
+function setInitialState() {
     let choices = document.getElementsByClassName('choice');
     console.log(choices[0].innerHTML);
     for (let i=0 ; i<choices.length ; i++) {
         choices[i].innerHTML = selection[i][0];
         
     }
-
-
-});
-
+}
 
 function setupStory() {
 
 }
+
+
+
 /**
  * buttonScroll function get the buttonType as Input.
  * buttonType correspond to the id attribute of the html element.
