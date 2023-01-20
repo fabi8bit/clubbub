@@ -37,6 +37,12 @@ function setupStory() {
 }
 
 function buttonScroll(buttonType) {
+    let thisButton = document.getElementById(buttonType);
+    let dataSelector = thisButton.getAttribute("data-selector");
+    parseInt(dataSelector++);
+    thisButton.setAttribute('data-selector',dataSelector); // setAttribute from this tutorial https://www.javascripttutorial.net/dom/attributes/set-the-value-of-an-attribute/
+    console.log(buttonType+"Arr"+" selection:" + dataSelector);
+    
     
 
 }
