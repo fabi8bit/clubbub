@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
         button.addEventListener("click", function() {
             if (this.getAttribute("id") === "play") {
                 alert(`You clicked ${this.getAttribute("id")}!`);
+                displayStory();
             } else if (this.getAttribute("id") === "shuffle") {
                 shuffle();
             } else {
@@ -104,4 +105,8 @@ function buttonScroll(buttonType) {
 
 function createStory() {
     
+}
+
+function displayStory() {
+    document.getElementById("story-area").style.display = "initial";
 }
