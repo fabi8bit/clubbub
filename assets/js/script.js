@@ -15,11 +15,13 @@ document.addEventListener("DOMContentLoaded", function() {
     for (let button of buttons) {
         button.addEventListener("click", function() {
             if (this.getAttribute("id") === "play") {
-                alert(`You clicked ${this.getAttribute("id")}!`);
-                displayStory(); 
+                displayStory('none','initial'); 
             } else if (this.getAttribute("id") === "shuffle") {
                 shuffle();
-            } else {
+            } else if (this.getAttribute("id") === "reset") {
+                displayStory('initial','none');
+            }
+            else {
                 let buttonType = this.getAttribute("id");
                 buttonScroll(buttonType);
             }
@@ -107,8 +109,10 @@ function createStory() {
     
 }
 
-function displayStory() {
-    document.getElementById("wizard-area").style.display = "none";
-    document.getElementById("story-area").style.display = "initial";
+function displayStory(dispWiz,dispStory) {
+    document.getElementById("wizard-area").style.display = dispWiz;
+    document.getElementById("story-area").style.display = dispStory;
+    console.log()
 
 }
+
