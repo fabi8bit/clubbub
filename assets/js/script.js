@@ -10,8 +10,6 @@ let selection = [heroArr,genreArr,environmentArr];
 
 document.addEventListener("DOMContentLoaded", function() {
     let buttons = document.getElementsByClassName('buttons');
-    
-
     for (let button of buttons) {
         button.addEventListener("click", function() {
             if (this.getAttribute("id") === "play") {
@@ -28,12 +26,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 buttonScroll(buttonType);
             }
         });
-
     }
     setInitialState();
-    
-
-
 });
 
 /**
@@ -44,7 +38,6 @@ function setInitialState() {
     // console.log(choices[0].innerHTML);
     for (let i=0 ; i<choices.length ; i++) {
         choices[i].innerHTML = selection[i][0];
-        
     }
 }
 
@@ -59,16 +52,8 @@ function shuffle() {
         console.log(randomIndex);
         choices[i].innerHTML = selection[i][randomIndex];
         choices[i].setAttribute('data-selector',randomIndex);
-        
-        
     }
 }
-
-function setupStory() {
-
-}
-
-
 
 /**
  * buttonScroll function get the buttonType as Input.
@@ -86,38 +71,28 @@ function buttonScroll(buttonType) {
     } else if (thisButton === environment) {
         thisArr = environmentArr;
     } 
-    
-    
-    
-    
     parseInt(dataSelector++);
-    
-    console.log(dataSelector);
-    
     if (dataSelector > thisArr.length-1){
         dataSelector = 0;
         thisButton.setAttribute('data-selector',dataSelector);
     } else {
         thisButton.setAttribute('data-selector',dataSelector); // setAttribute from this tutorial https://www.javascripttutorial.net/dom/attributes/set-the-value-of-an-attribute/
     }
-
     thisButton.innerHTML = thisArr[dataSelector];
-    
-
 }
 
-
-
+/**
+ * this function create a string that will be used as a code
+ * to retrieve the html element (story) to be displayed
+ */
 function createStory() {
     let storyId = "s";
     let choices = document.getElementsByClassName('choice');
     // console.log(choices[0].innerHTML);
     for (let i=0 ; i<choices.length ; i++) {
-        
         console.log(choices[i].getAttribute('data-selector'));
         storyId += choices[i].getAttribute('data-selector');
         console.log(storyId);
-        
     }
     displayStory('none','initial');
     //put all the stories invisible before the selected one (storyId) will be set to visible 
@@ -125,12 +100,13 @@ function createStory() {
     for (let i=0 ; i<stories.length ; i++) {
         stories[i].style.display = 'none';
     }
+    //the selected story is set to visible ('initial')
     document.getElementById(storyId).style.display = 'initial';
 }
 
 /**
  * this function is used to display or hide the controls and the story section
- * @param {set the wizard button visible or invisible} dispWiz 
+ * @param {set the wizard buttons visible or invisible} dispWiz 
  * @param {set the Story visible or invisible} dispStory 
  */
 function displayStory(dispWiz,dispStory) {
@@ -138,7 +114,5 @@ function displayStory(dispWiz,dispStory) {
     document.getElementById("wizard-area").style.display = dispWiz;
     document.getElementById("story-area").style.display = dispStory;
     // document.getElementById(storyId).style.display = 'initial';
-    
-
 }
 
