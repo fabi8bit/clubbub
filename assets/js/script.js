@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
         button.addEventListener("click", function() {
             if (this.getAttribute("id") === "play") {
                 createStory();
-                displayStory('none','initial');
+                
                  
             } else if (this.getAttribute("id") === "shuffle") {
                 shuffle();
@@ -109,7 +109,7 @@ function buttonScroll(buttonType) {
 
 
 function createStory() {
-    let storyId = "";
+    let storyId = "s";
     let choices = document.getElementsByClassName('choice');
     // console.log(choices[0].innerHTML);
     for (let i=0 ; i<choices.length ; i++) {
@@ -119,12 +119,25 @@ function createStory() {
         console.log(storyId);
         
     }
-    
+    displayStory('none','initial');
+    //put all the stories invisible before the selected one (storyId) will be set to visible 
+    let stories = document.getElementsByClassName('stories');
+    for (let i=0 ; i<stories.length ; i++) {
+        stories[i].style.display = 'none';
+    }
+    document.getElementById(storyId).style.display = 'initial';
 }
 
+/**
+ * this function is used to display or hide the controls and the story section
+ * @param {set the wizard button visible or invisible} dispWiz 
+ * @param {set the Story visible or invisible} dispStory 
+ */
 function displayStory(dispWiz,dispStory) {
+    
     document.getElementById("wizard-area").style.display = dispWiz;
     document.getElementById("story-area").style.display = dispStory;
+    // document.getElementById(storyId).style.display = 'initial';
     
 
 }
