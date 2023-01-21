@@ -15,7 +15,9 @@ document.addEventListener("DOMContentLoaded", function() {
     for (let button of buttons) {
         button.addEventListener("click", function() {
             if (this.getAttribute("id") === "play") {
-                displayStory('none','initial'); 
+                createStory();
+                displayStory('none','initial');
+                 
             } else if (this.getAttribute("id") === "shuffle") {
                 shuffle();
             } else if (this.getAttribute("id") === "reset") {
@@ -56,6 +58,7 @@ function shuffle() {
         console.log(choices[i]);
         console.log(randomIndex);
         choices[i].innerHTML = selection[i][randomIndex];
+        choices[i].setAttribute('data-selector',randomIndex);
         
         
     }
@@ -106,13 +109,23 @@ function buttonScroll(buttonType) {
 
 
 function createStory() {
+    let storyId = "";
+    let choices = document.getElementsByClassName('choice');
+    // console.log(choices[0].innerHTML);
+    for (let i=0 ; i<choices.length ; i++) {
+        
+        console.log(choices[i].getAttribute('data-selector'));
+        storyId += choices[i].getAttribute('data-selector');
+        console.log(storyId);
+        
+    }
     
 }
 
 function displayStory(dispWiz,dispStory) {
     document.getElementById("wizard-area").style.display = dispWiz;
     document.getElementById("story-area").style.display = dispStory;
-    console.log()
+    
 
 }
 
