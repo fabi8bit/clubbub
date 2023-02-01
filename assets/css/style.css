@@ -39,6 +39,10 @@ body {
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* Buttons */
@@ -101,10 +105,11 @@ body {
 
 /*Resize for screen 1000px down*/
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
 
     #wizard-area {
-        max-width: 306px;        
+        max-width: 306px;   
+        height: auto;     
     }
 }
 
