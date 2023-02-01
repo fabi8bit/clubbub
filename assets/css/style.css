@@ -33,7 +33,9 @@ body {
 #wizard-area {
     margin-top: 20px;
     background: rgb(32, 0, 70);
+    /* background-image: url('../images/backgroundpattern.webp'); */
     width: 85%;
+    max-width: 850px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
@@ -50,7 +52,7 @@ body {
     font-family: "Lora", sans-serif;
     font-size: 1.5rem;
     color: white;
-    margin: 20px;
+    margin: 10px;
     transition: all 0.5s;
 }
 
@@ -97,9 +99,14 @@ body {
     font-size: 2rem;
 }
 
+/*Resize for screen 1000px down*/
 
+@media screen and (max-width: 1200px) {
 
-
+    #wizard-area {
+        max-width: 306px;        
+    }
+}
 
 
 
