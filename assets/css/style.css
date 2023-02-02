@@ -1,5 +1,4 @@
 body {
-    
     font-family: "Lora", sans-serif;
     padding: 0;
     margin: 0;
@@ -7,7 +6,6 @@ body {
     /* background-image: url("assets/images/watercolor_pattern.webp");
     background-repeat: repeat;
     background-size: 1600px 840px; */
-    
 }
 
 .heading {
@@ -23,16 +21,15 @@ body {
 
 .logo {
     width: 85%;
-    
 }
 
 #logo-claim {
     margin:auto;
 }
 
-#wizard-area {
-    background: rgb(32, 0, 70);
-    /* background-image: url('../images/backgroundpattern.webp'); */
+.wizard {
+    /* background: rgb(32, 0, 70); */
+    background-image: url('../images/pattMagic.webp'); 
     width: 85%;
     max-width: 850px;
     margin-top: 20px;
@@ -41,6 +38,16 @@ body {
     margin-bottom: 30px;
     border-radius: 20px;
     height: 50vh;
+    
+}
+
+/*make disappear elements*/
+
+.display-none {
+    display: none;
+}
+
+.display-all {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,12 +67,6 @@ body {
     margin: 10px;
     transition: all 0.5s;
 }
-
-
-
-
-
-
 
 #hero {
     background-color: rgb(255, 166, 0);
@@ -102,8 +103,15 @@ body {
 
 /* Story Area */
 
-#story-area {
+/* .story {
     display: none;
+} */
+
+.stories {
+    background: rgb(141, 24, 24);
+    color:blueviolet;
+    width: 85%;
+    height: 40vh;
 }
 
 .story-title {
