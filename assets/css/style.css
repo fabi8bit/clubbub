@@ -51,6 +51,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 /* Buttons */
@@ -81,6 +82,7 @@ body {
 #genre:hover {
     background-color: rgb(148, 69, 168);
 }
+
 #environment {
     background-color: rgb(61, 106, 255);
 }
@@ -94,6 +96,7 @@ body {
 #shuffle:hover {
     background-color: rgb(247, 231, 250);
 }
+
 #play {
     background-color: rgb(22, 134, 0);
 }
@@ -103,19 +106,36 @@ body {
 
 /* Story Area */
 
-/* .story {
-    display: none;
-} */
+.story {
+    background: rgb(255, 255, 255);
+    width: 85%;
+    max-width: 850px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 20px;
+}
 
 .stories {
-    background: rgb(141, 24, 24);
-    color:blueviolet;
+    background-image: url('../images/pattMagic.webp'); 
     width: 85%;
-    height: 40vh;
+    max-width: 850px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    height: 50vh;
 }
 
 .story-title {
     font-size: 2rem;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 85%;
 }
 
 /*Resize for screen 1000px down*/
@@ -126,6 +146,11 @@ body {
         max-width: 306px;   
         height: auto;     
     }
+
+    .stories {
+        height: 70vh;
+    }
+
 }
 
 

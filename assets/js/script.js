@@ -99,6 +99,7 @@ function createStory() {
     for (let i = 0; i < stories.length; i++) {
         
         stories[i].classList.add("display-none");
+        stories[i].classList.remove("display-all");
     }
     //the selected story is set to visible ('initial')
     document.getElementById(storyId).classList.remove("display-none");
