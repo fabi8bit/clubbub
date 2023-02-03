@@ -20,6 +20,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 shuffle();
             } else if (this.getAttribute("id") === "reset") {
                 displayStory('display-all', 'display-none');
+            } else if (this.getAttribute("id") === "logme") {
+                displayWizard();
             } else {
                 let buttonType = this.getAttribute("id");
                 buttonScroll(buttonType);
@@ -28,6 +30,20 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     setInitialState();
 });
+
+function displayWizard() {
+    let uName = document.getElementById("user").value;
+    console.log(uName);
+    if (uName) {
+        document.getElementById("login").classList.remove('display-all');
+        document.getElementById("login").classList.add('display-none');
+        document.getElementById("wizard-area").classList.remove('display-none');
+        document.getElementById("wizard-area").classList.add('display-all');
+        document.getElementById("logo-claim").innerHTML += `, ${uName}`;
+    } else {
+        alert('we need your name, baby!')
+    }
+}
 
 /**
  * Set initial state for the buttons of the choice-area
@@ -97,7 +113,7 @@ function createStory() {
     //put all the stories invisible before the selected one (storyId) will be set to visible 
     let stories = document.getElementsByClassName('stories');
     for (let i = 0; i < stories.length; i++) {
-        
+
         stories[i].classList.add("display-none");
         stories[i].classList.remove("display-all");
     }
@@ -105,26 +121,26 @@ function createStory() {
     document.getElementById(storyId).classList.remove("display-none");
     document.getElementById(storyId).classList.add("display-all");
 
-//     document.getElementById(storyId).style.display = 'initial';
-//     var style = document.createElement('style');
-//     style.innerHTML = `
-//     #story-area {
-//         background-image: url('../assets/images/pattMagic.webp'); 
-//     width: 85%;
-//     max-width: 850px;
-//     margin-top: 20px;
-//     margin-left: auto;
-//     margin-right: auto;
-//     margin-bottom: 30px;
-//     border-radius: 20px;
-//     height: 50vh;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-        
-//     }
-//     `;
-//     document.head.appendChild(style);
+    //     document.getElementById(storyId).style.display = 'initial';
+    //     var style = document.createElement('style');
+    //     style.innerHTML = `
+    //     #story-area {
+    //         background-image: url('../assets/images/pattMagic.webp'); 
+    //     width: 85%;
+    //     max-width: 850px;
+    //     margin-top: 20px;
+    //     margin-left: auto;
+    //     margin-right: auto;
+    //     margin-bottom: 30px;
+    //     border-radius: 20px;
+    //     height: 50vh;
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: center;
+
+    //     }
+    //     `;
+    //     document.head.appendChild(style);
 
 
 }

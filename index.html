@@ -23,7 +23,11 @@
             <h1 id="logo-claim">Create your story</h1>
         </div>
     </header>
-    <section id="wizard-area" class="wizard display-all">
+    <section id="login" class="form-container display-all">
+        <input type="text" id="user" name="username" placeholder="Enter your name" class="form-item" required>
+        <button type="submit" class="buttons" id="logme"><i class="fa-solid fa-right-to-bracket"></i></button>
+    </section>
+    <section id="wizard-area" class="wizard display-none">
         <div id="choice-area">
             <button data-selector="0" class="buttons choice" id="hero"></button>
             <button data-selector="0" class="buttons choice" id="genre"></button>
