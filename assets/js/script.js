@@ -1,6 +1,6 @@
 let heroArr = ['<i class="fa-solid fa-cat"> Animal</i>', '<i class="fa-solid fa-mask"> Super Hero</i>', '<i class="fa-solid fa-user-astronaut"> Human</i>'];
 let genreArr = ['<i class="fa-regular fa-hand-peace"> Friendship</i>', '<i class="fa-solid fa-bolt-lightning"> War</i>', '<i class="fa-solid fa-hat-wizard"> Magic</i>'];
-let environmentArr = ['<i class="fa-solid fa-rocket"> Space</i>', '<i class="fa-solid fa-tree"> Nature</i>', '<i class="fa-solid fa-city"> City</i>'];
+let environmentArr = ['<i class="fa-solid fa-tree"> Nature</i>', '<i class="fa-solid fa-city"> City</i>', '<i class="fa-solid fa-rocket"> Space</i>'];
 let selection = [heroArr, genreArr, environmentArr];
 
 

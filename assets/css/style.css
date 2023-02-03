@@ -146,6 +146,13 @@ body {
     background-color: rgb(2, 198, 202);
 }
 
+#reset {
+    background-color: rgb(136, 0, 75);
+}
+#reset:hover {
+    background-color: rgb(215, 0, 118);
+}
+
 /* Story Area */
 
 .story {
