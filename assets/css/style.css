@@ -25,6 +25,7 @@ body {
 
 #logo-claim {
     margin:auto;
+    padding: 15px;
 }
 
 #login {
@@ -182,6 +183,11 @@ body {
     font-size: large;
 }
 
+#instruction p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 #instruction button {
     width: 90px;
     height: 25px;
@@ -245,6 +251,13 @@ body {
         height: 70vh;
     }
 
+}
+
+/*Resize for screen 500px down*/
+
+.stories {
+    height: auto;
+    padding-top: 20px;
 }
 
 
