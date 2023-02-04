@@ -38,7 +38,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function displayWizard() {
     let uName = document.getElementById("user").value;
-    console.log(uName);
     if (uName) {
         document.getElementById("login").classList.remove('display-all');
         document.getElementById("login").classList.add('display-none');
@@ -46,7 +45,7 @@ function displayWizard() {
         document.getElementById("wizard-area").classList.add('display-all');
         document.getElementById("logo-claim").innerHTML += `, ${uName}`;
     } else {
-        alert('we need your name, baby!')
+        alert('we need your name, baby!');
     }
 }
 
@@ -55,7 +54,6 @@ function displayWizard() {
  */
 function setInitialState() {
     let choices = document.getElementsByClassName('choice');
-    // console.log(choices[0].innerHTML);
     for (let i = 0; i < choices.length; i++) {
         choices[i].innerHTML = selection[i][0];
     }
@@ -68,8 +66,6 @@ function shuffle() {
     let choices = document.getElementsByClassName('choice');
     for (let i = 0; i < choices.length; i++) {
         let randomIndex = Math.floor(Math.random() * 3);
-        console.log(choices[i]);
-        console.log(randomIndex);
         choices[i].innerHTML = selection[i][randomIndex];
         choices[i].setAttribute('data-selector', randomIndex);
     }
@@ -108,11 +104,8 @@ function buttonScroll(buttonType) {
 function createStory() {
     let storyId = "s";
     let choices = document.getElementsByClassName('choice');
-    // console.log(choices[0].innerHTML);
     for (let i = 0; i < choices.length; i++) {
-        console.log(choices[i].getAttribute('data-selector'));
         storyId += choices[i].getAttribute('data-selector');
-        console.log(storyId);
     }
     displayStory('display-none', 'display-all');
     //put all the stories invisible before the selected one (storyId) will be set to visible 
@@ -125,29 +118,6 @@ function createStory() {
     //the selected story is set to visible ('initial')
     document.getElementById(storyId).classList.remove("display-none");
     document.getElementById(storyId).classList.add("display-all");
-
-    //     document.getElementById(storyId).style.display = 'initial';
-    //     var style = document.createElement('style');
-    //     style.innerHTML = `
-    //     #story-area {
-    //         background-image: url('../assets/images/pattMagic.webp'); 
-    //     width: 85%;
-    //     max-width: 850px;
-    //     margin-top: 20px;
-    //     margin-left: auto;
-    //     margin-right: auto;
-    //     margin-bottom: 30px;
-    //     border-radius: 20px;
-    //     height: 50vh;
-    //     display: flex;
-    //     flex-direction: column;
-    //     justify-content: center;
-
-    //     }
-    //     `;
-    //     document.head.appendChild(style);
-
-
 }
 
 /**
@@ -162,9 +132,6 @@ function displayStory(dispWiz, dispStory) {
     document.getElementById("story-area").classList.remove(dispStory);
     document.getElementById("wizard-area").classList.add(dispWiz);
     document.getElementById("story-area").classList.add(dispStory);
-    // document.getElementById("wizard-area").style.display = dispWiz;
-    // document.getElementById("story-area").style.display = dispStory;
-    // document.getElementById(storyId).style.display = 'initial';
 }
 
 function displayInstruction(dispInstr, dispWiz) {
@@ -174,7 +141,4 @@ function displayInstruction(dispInstr, dispWiz) {
     document.getElementById("instruction").classList.remove(dispInstr);
     document.getElementById("instruction").classList.add(dispInstr);
     document.getElementById("wizard-area").classList.add(dispWiz);
-    // document.getElementById("wizard-area").style.display = dispWiz;
-    // document.getElementById("story-area").style.display = dispStory;
-    // document.getElementById(storyId).style.display = 'initial';
 }
