@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- GoogleFont and fontawesome -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@800&display=swap" rel="stylesheet">
@@ -22,11 +23,13 @@
             <h1 id="logo-claim">Create your story</h1>
         </div>
     </header>
-    <section id="login" class="form-container display-all">
+
+    <div id="login" class="form-container display-all">
         <input type="text" id="user" name="username" placeholder="> Enter your name" class="form-item" required>
         <button type="submit" class="buttons" id="logme"><i class="fa-solid fa-right-to-bracket"></i></button>
-    </section>
-    <section id="wizard-area" class="wizard display-none">
+    </div>
+
+    <div id="wizard-area" class="wizard display-none">
         <button id="question-btn" type="button" class="buttons"><i class="fa-solid fa-question"></i></button>
         <div id="choice-area">
             <button data-selector="0" class="buttons choice" id="hero"></button>
@@ -37,8 +40,8 @@
             <button class="buttons" id="shuffle"><i class="fa-solid fa-shuffle"></i></button>
             <button class="buttons" id="play"><i class="fa-solid fa-circle-play"></i></button>
         </div>
-        
-    </section>
+    </div>
+
     <div id="instruction" class="display-none">
         <h3><strong>Welcome to Club Bub</strong><br></h3>
         <p>
@@ -50,14 +53,8 @@
         </p>
         <button id="close-instruction" type="button" class="buttons">Ok</button>
     </div>
-    
 
-    
-        
-
-    
-
-    <section id="story-area" class="story-container display-none">
+    <div id="story-area" class="story-container display-none">
         <div id="s000" class="stories">
             <div class="story-title">"Max and Emily: Friendship in Space"</div>
             <div class="story">Once upon a time, in a faraway galaxy, two unlikely friends were sent on a journey to
@@ -154,8 +151,6 @@
                 best. An asteroid threatened their ship, but they put aside their differences and used their magic to
                 save it. Realizing the power of unity, they decided to always use their magic for the good of all.</div>
         </div>
-
-
         <div id="s100" class="stories">
             <div class="story-title">Heroes in Harmony: A Story of Friendship in the Forest</div>
             <div class="story">A group of superhero friends, each with their own unique powers, were on a mission to
@@ -193,7 +188,7 @@
                 common enemy and brought peace to the city once again.</div>
         </div>
         <div id="s112" class="stories">
-            <div class="story-title">Story about Heroes, Conflict,  Space</div>
+            <div class="story-title">Story about Heroes, Conflict, Space</div>
             <div class="story">This story is not available</div>
         </div>
         <div id="s120" class="stories">
@@ -252,11 +247,8 @@
                 balance to the universe.</div>
         </div>
         <button class="buttons" id="reset"><i class="fa-solid fa-backward-step"></i></button>
-    </section>
-
+    </div>
     <script src="https://kit.fontawesome.com/8430928106.js" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
-
 </body>
-
 </html>
