@@ -22,7 +22,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 displayStory('display-all', 'display-none');
             } else if (this.getAttribute("id") === "logme") {
                 displayWizard();
-            } else {
+            } else if (this.getAttribute("id") === "question-btn") {
+                displayInstruction('display-all', 'display-none');
+            } else if (this.getAttribute("id") === "close-instruction") {
+                displayInstruction('display-none', 'display-all');
+            }
+             else {
                 let buttonType = this.getAttribute("id");
                 buttonScroll(buttonType);
             }
@@ -157,6 +162,18 @@ function displayStory(dispWiz, dispStory) {
     document.getElementById("story-area").classList.remove(dispStory);
     document.getElementById("wizard-area").classList.add(dispWiz);
     document.getElementById("story-area").classList.add(dispStory);
+    // document.getElementById("wizard-area").style.display = dispWiz;
+    // document.getElementById("story-area").style.display = dispStory;
+    // document.getElementById(storyId).style.display = 'initial';
+}
+
+function displayInstruction(dispInstr, dispWiz) {
+    document.getElementById("wizard-area").classList.remove(dispWiz);
+    document.getElementById("wizard-area").classList.remove(dispInstr);
+    document.getElementById("instruction").classList.remove(dispWiz);
+    document.getElementById("instruction").classList.remove(dispInstr);
+    document.getElementById("instruction").classList.add(dispInstr);
+    document.getElementById("wizard-area").classList.add(dispWiz);
     // document.getElementById("wizard-area").style.display = dispWiz;
     // document.getElementById("story-area").style.display = dispStory;
     // document.getElementById(storyId).style.display = 'initial';

@@ -102,6 +102,7 @@ body {
     color: white;
     margin: 10px;
     transition: all 0.5s;
+    cursor: pointer;
 }
 
 #hero {
@@ -151,6 +152,45 @@ body {
 }
 #reset:hover {
     background-color: rgb(215, 0, 118);
+}
+
+/* Instruction */
+
+#instruction {
+    background: rgb(136, 0, 75);
+    color: #fff;
+    text-align: left;
+    border-radius: 10px;
+    width: 85%;
+    max-width: 850px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    height: 50vh;
+}
+
+#question-btn {
+    width: 45px;
+    height: 45px;
+    background: rgb(136, 0, 75);
+    color: #fff;
+    border-radius: 50%;
+    border: 3px;
+    border-color: #000;
+    font-size: large;
+}
+
+#instruction button {
+    width: 90px;
+    height: 25px;
+    background: #fff;
+    color: #000;
+    border-radius: 10px;
+    border: 3px;
+    border-color: #000;
+    font-size: medium;
 }
 
 /* Story Area */
