@@ -1,108 +1,140 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Club Bub
 
-Welcome fabi8bit,
+The Boarding School (TBS skateboarding) is the website of a skateboard school specializing in longboarding. The school offers lessons and education on how to ride a longboard, which is a type of skateboard that is generally longer and wider than a traditional skateboard. It offers classes for beginners as well as more advanced riders, and covers topics such as balance, carving, turning, braking, and tricks. TBS aims to gather people ranging from 18 years old and older, around longboarding. It offers not only programs specialized in various disciplines of longboarding, but also opportunities for people with an interest for the skateboard culture to chat together.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Responsive Mockup](readme_images/responsive_mock_up.png)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
+## Development of the idea
 
-A blue button should appear to click: _Make Public_,
+### Where the idea comes from
 
-Another blue button should appear to click: _Open Browser_.
+I'm almost 50 years old, and I have been passionate about skateboarding since age 11. At my age it is basically impossible to skate as you wish, unless you are Tony Hawk. And because once you are a skater, you are a skater for the rest of your life, (but your body will not keep up) I thought it would be a good idea to invent a skateboard school to keep this dream alive: TBS Skateboarding.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- Sketches on paper
 
-A blue button should appear to click: _Make Public_,
+![sketches](readme_images/sketches.png)
 
-Another blue button should appear to click: _Open Browser_.
+- Logo created in Adobe Illustrator starting from the free icon I found at this link: https://www.freepik.com/free-vector/people-enjoying-their-free-time_4914715.htm#query=skateboard&position=14&from_view=search&track=sph
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+![tbs logo](readme_images/tbs-logo_small_readme.png)
 
-To log into the Heroku toolbelt CLI:
+- Color branding research. Inspiration Screenshot and logo with color branding
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+![color inspiration](readme_images/color-inspiration-straction.png)
+![Logo with color branding](readme_images/tbs-color-branding-01.png)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
-------
 
-## Release History
+- Wire framing of the website created in Adobe XD
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+![wireframe01](readme_images/01-wireframe-Index.png)
+![wireframe02](readme_images/02-wireframe-gallery.png)
+![wireframe03](readme_images/03-wireframe-About.png)
+![wireframe04](readme_images/04-wireframe-SignUp.png)
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+### Features
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+  - __Header__
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+  - The header is divided into two parts: the logo and the navigation bar. This structure is replicated in all pages of the site for optimal user experience. The logo has a spin animation on load, in order to give the impression that it is rolling like a skateboard wheel. The navigation bar allows users to navigate the site back and forth without the use of the back button of the browser.
+  - This section is fully responsive and adapts to different screen sizes, changing the position of the elements according to the screen aspect ratios.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+![Header](readme_images/header-scrshot.webp)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+- __Homepage image__
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+  - The image hopes to transmit the right vibe to the user and includes an eye-catching overlay claim.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+![Homepage image](readme_images/homepage-scrshot.webp)
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+- __School Offer__
+  
+  - In this section, the offer of the school is presented through images with a brief description. In the future, every section will be clickable, and will bring the user to the page where every discipline will be described more in depth, with a brief tutorial video on how to take basic first steps into longboarding.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+![School Offer section](readme_images/offer-scrshot.webp)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
-------
+- __Footer__
 
-## FAQ about the uptime script
+  - The footer is divided between the top part and the bottom part. The first one contains the links to the most relevant social media networks of the school. Each link will open in a new tab to facilitate the user's navigation, while the address and contacts of TBS are included in the bottom part.
 
-**Why have you added this script?**
+![Footer](readme_images/footer-scrsot.webp)
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
 
-**How will this affect me?**
+- __Gallery page__
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+  - The gallery shows some picture of a longboarding competition
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+![Gallery](readme_images/gallery-scrshot.webp)
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
 
-**So….?**
+- __About page__
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+  - This section tells the story of TBS and how the members fell in love with skateboarding. It features an original slide from 1992 picturing the founders at a very young age.
 
-**Can I opt out?**
+![About](readme_images/about-scrshot.webp)
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+- __SignUp page__
 
-**Anything more?**
+  - Through the form the user can subscribe to the TBS community in order to get information and news. This section is only for demostration and the backend is not implemented.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+![SignUp](readme_images/signup-scrshot.webp)
 
----
 
-Happy coding!
+
+## Testing 
+
+The website has been tested in all its parts and works as intended. It is fully responsive and supports all screen sizes down to 350px. The tests were conducted using the inspector of Google Chrome. It scored high results with Lighthouse both on [Desktop](readme_images/lighthouse_desktop_results.png) and [Mobile](readme_images/lighthouse_mobile_results.png) ([Screenshot_Mobile](readme_images/lighthouse_mobile_test_scrshot.png)).
+The elements adapt and change their appearence according to the aspect ratio of the screen without breaking the design.
+
+
+
+
+
+### Validator Testing 
+
+- JS
+  - 25 warning were returned when passing through [JSHint](readme_assets/JSHint_warnings.md)
+- CSS
+  - 
+- HTML
+  -
+
+### Unfixed
+
+- Lighthouse spots undeclared width and hight for some images. Putting the right aspect-ratio (checked on Photoshop) it says that the image is distort (but infact was not) so I decided to left them undeclared because it scores higher results.
+In future the images will be converted to WebP. The jpg were also tinyfied using [tinyPNG](https://tinypng.com/)
+
+## Deployment
+
+
+
+- The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the GitHub repository, navigate to the Settings tab 
+  - On the left menu click on pages
+  - On Build and Deployment section select the main branch and click on save.
+  - Once saved the url of the page will appear on top of the page. 
+
+The live link can be found here - https://fabi8bit.github.io/theboardingschool/
+
+
+## Credits 
+
+The photos on this website are extracted from my private photo collection except for the [freestyle](assets/images/freestyle-thumb-small.jpg) and [move_around](assets/images/move-thumb-small.jpg) photos, which are available for free download from [pexels](https://www.pexels.com/search/longboard/).
+
+### Content and technique
+
+- All the text are invented and created from scratch
+- Advice on how to use flex-box where taken from this [tutorial](https://www.youtube.com/watch?v=fYq5PXgSsbE&t=17s)
+- The technique for reordering nav menu was taken from stackoverflow [here](https://stackoverflow.com/questions/11243002/css-float-right-without-changing-order)
+- The technique for the spinning logo was taken from [here](https://codepen.io/teerapuch/pen/vLJXeR)
+- Advice to create the photo gallery was taken from [here](https://blog.logrocket.com/responsive-image-gallery-css-flexbox/)
+- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
