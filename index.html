@@ -26,19 +26,19 @@
 
     <div id="login" class="form-container display-all">
         <input type="text" id="user" name="username" placeholder="> Enter your name" class="form-item" required>
-        <button type="submit" class="buttons" id="logme"><i class="fa-solid fa-right-to-bracket"></i></button>
+        <button type="submit" class="buttons" id="logme" aria-label="login"><i class="fa-solid fa-right-to-bracket"></i></button>
     </div>
 
     <div id="wizard-area" class="wizard display-none">
         <button id="question-btn" type="button" class="buttons"><i class="fa-solid fa-question"></i></button>
         <div id="choice-area">
-            <button data-selector="0" class="buttons choice" id="hero"></button>
-            <button data-selector="0" class="buttons choice" id="genre"></button>
-            <button data-selector="0" class="buttons choice" id="environment"></button>
+            <button data-selector="0" class="buttons choice" id="hero" aria-label="character"></button>
+            <button data-selector="0" class="buttons choice" id="genre" aria-label="style"></button>
+            <button data-selector="0" class="buttons choice" id="environment" aria-label="setting"></button>
         </div>
         <div id="controls-area">
-            <button class="buttons" id="shuffle"><i class="fa-solid fa-shuffle"></i></button>
-            <button class="buttons" id="play"><i class="fa-solid fa-circle-play"></i></button>
+            <button class="buttons" id="shuffle" aria-label="shuffle"><i class="fa-solid fa-shuffle"></i></button>
+            <button class="buttons" id="play" aria-label="play"><i class="fa-solid fa-circle-play"></i></button>
         </div>
     </div>
 
@@ -51,7 +51,7 @@
             - Click the shuffle button to get a random selection<br>
             - Click the play button to let your story appear<br>
         </p>
-        <button id="close-instruction" type="button" class="buttons">Ok</button>
+        <button id="close-instruction" type="button" class="buttons" aria-label="close">Close</button>
     </div>
 
     <div id="story-area" class="story-container display-none">
@@ -246,7 +246,7 @@
                 magic was fading and that they needed to work together to return it to its rightful place and restore
                 balance to the universe.</div>
         </div>
-        <button class="buttons" id="reset"><i class="fa-solid fa-backward-step"></i></button>
+        <button class="buttons" id="reset" aria-label="reset"><i class="fa-solid fa-backward-step"></i></button>
     </div>
     <script src="https://kit.fontawesome.com/8430928106.js" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>

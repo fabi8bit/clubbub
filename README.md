@@ -1,8 +1,10 @@
 # Club Bub
 
-The Boarding School (TBS skateboarding) is the website of a skateboard school specializing in longboarding. The school offers lessons and education on how to ride a longboard, which is a type of skateboard that is generally longer and wider than a traditional skateboard. It offers classes for beginners as well as more advanced riders, and covers topics such as balance, carving, turning, braking, and tricks. TBS aims to gather people ranging from 18 years old and older, around longboarding. It offers not only programs specialized in various disciplines of longboarding, but also opportunities for people with an interest for the skateboard culture to chat together.
+Club Bub is an interactive story creator. It is designed for kids and emulates the behaviour of a real toy called ["Once upon a time" by Clementoni.](https://en.clementoni.com/collections/the-best-loved/products/once-upon-a-time) The origanal toy is conceived, designed and developed in Italy.
 
-![Responsive Mockup](readme_images/responsive_mock_up.png)
+After the login page you'll be presented to the main interface of the game. By clicking on each of the three top buttons displayed , the user will be able to decide the type of character (animal, super hero, astronauts), the type of style (friendship, war, magic), and the type of setting (Space, Nature, City) for the story. Each combination will lead to a different story and a world of fairy tales. The game is an interactive storyteller to create and read up to 27 different stories.
+
+![Responsive Mockup](readme_assets/readme_imgs/club-bub_responsive.webp)
 
 
 
@@ -11,90 +13,70 @@ The Boarding School (TBS skateboarding) is the website of a skateboard school sp
 
 ### Where the idea comes from
 
-I'm almost 50 years old, and I have been passionate about skateboarding since age 11. At my age it is basically impossible to skate as you wish, unless you are Tony Hawk. And because once you are a skater, you are a skater for the rest of your life, (but your body will not keep up) I thought it would be a good idea to invent a skateboard school to keep this dream alive: TBS Skateboarding.
+My two doughters got this toy as a present and they still love to play with it. I thought was a nice idea to develope a software version of it. Club Bub is born!
 
 - Sketches on paper
 
-![sketches](readme_images/sketches.png)
+![sketches1](readme_assets/readme_imgs/button-functionality-sketch.webp)
+![sketches2](readme_assets/readme_imgs/wire-sketch-clubbub.webp)
+![sketches3](readme_assets/readme_imgs/sketch_functions.webp)
 
-- Logo created in Adobe Illustrator starting from the free icon I found at this link: https://www.freepik.com/free-vector/people-enjoying-their-free-time_4914715.htm#query=skateboard&position=14&from_view=search&track=sph
+- Logo created starting from a sketch I got from an AI called Dall e 2 and recrafted in Adobe Illustrator
 
-![tbs logo](readme_images/tbs-logo_small_readme.png)
+![club-bub-logo](readme_assets/readme_imgs/clubbub-logo-ext.webp)
 
-- Color branding research. Inspiration Screenshot and logo with color branding
+- Color branding and layout research. I was inspired by the color branding of an App called Headspace.
 
-![color inspiration](readme_images/color-inspiration-straction.png)
-![Logo with color branding](readme_images/tbs-color-branding-01.png)
-
-
-
-- Wire framing of the website created in Adobe XD
-
-![wireframe01](readme_images/01-wireframe-Index.png)
-![wireframe02](readme_images/02-wireframe-gallery.png)
-![wireframe03](readme_images/03-wireframe-About.png)
-![wireframe04](readme_images/04-wireframe-SignUp.png)
+![color inspiration](readme_assets/readme_imgs/hs_app_scshot.webp)
 
 
 
 
 ### Features
 
-  - __Header__
+This website features only one page. The Html is divided in sections that are displayed or hidden acordingly to the user action. This section are login, wizard, instruction, and story.
 
-  - The header is divided into two parts: the logo and the navigation bar. This structure is replicated in all pages of the site for optimal user experience. The logo has a spin animation on load, in order to give the impression that it is rolling like a skateboard wheel. The navigation bar allows users to navigate the site back and forth without the use of the back button of the browser.
-  - This section is fully responsive and adapts to different screen sizes, changing the position of the elements according to the screen aspect ratios.
+- __Login__
 
-![Header](readme_images/header-scrshot.webp)
+  - The login features only one input for username and a button to enter the wizard section. Not providing the username, will result in an alert pop-up asking for the input. The input field is taken to display the user name in the next sections and it's not submitted. Clicking the enter button the Story Wizard section is diplayed and the login section hidden.
+ 
+![Login](readme_assets/readme_imgs/mobile_login_ss.webp)
 
-- __Homepage image__
+- __Wizard Area__
 
-  - The image hopes to transmit the right vibe to the user and includes an eye-catching overlay claim.
+  - The Wizard Area allows to select the element of the story, and to display it. The Wizard is conceptually divided in three parts: Instruction, Choice Area, and Controls Area. 
 
-![Homepage image](readme_images/homepage-scrshot.webp)
+    - The instruction button display the instruction on how to play the game
 
+    - _Choice Area_:
 
-- __School Offer__
-  
-  - In this section, the offer of the school is presented through images with a brief description. In the future, every section will be clickable, and will bring the user to the page where every discipline will be described more in depth, with a brief tutorial video on how to take basic first steps into longboarding.
+      - Character: The user can choose amongst three types of character: Animal, Super-Hero, Human
+      - Style: The user can choose amongst three types of style: Friendship, War, Magic
+      - Setting: The user can choose amongst three types of settings: Space, Nature, City
 
-![School Offer section](readme_images/offer-scrshot.webp)
+    - _Controls Area_
 
+    The Controls Area features two buttons: Shuffle, and Play
+      - The shuffle button creates a random combination of the story elements
+      - The Play button displays the story selected according to the choice of the user and hides the Wizard Area
 
-- __Footer__
-
-  - The footer is divided between the top part and the bottom part. The first one contains the links to the most relevant social media networks of the school. Each link will open in a new tab to facilitate the user's navigation, while the address and contacts of TBS are included in the bottom part.
-
-![Footer](readme_images/footer-scrsot.webp)
-
-
-- __Gallery page__
-
-  - The gallery shows some picture of a longboarding competition
-
-![Gallery](readme_images/gallery-scrshot.webp)
+![wizard-area](readme_assets/readme_imgs/mobile-wizard-ss.webp)
 
 
-- __About page__
 
-  - This section tells the story of TBS and how the members fell in love with skateboarding. It features an original slide from 1992 picturing the founders at a very young age.
+- __Story Area__
 
-![About](readme_images/about-scrshot.webp)
+  - This area is where the choosen story is displayed and it is revealed after clicking on the play button. It features also a reset button to bring the user back to the wizard area
 
+![story-area](readme_assets/readme_imgs/mobile-story-display.webp)
 
-- __SignUp page__
-
-  - Through the form the user can subscribe to the TBS community in order to get information and news. This section is only for demostration and the backend is not implemented.
-
-![SignUp](readme_images/signup-scrshot.webp)
 
 
 
 ## Testing 
 
-The website has been tested in all its parts and works as intended. It is fully responsive and supports all screen sizes down to 350px. The tests were conducted using the inspector of Google Chrome. It scored high results with Lighthouse both on [Desktop](readme_images/lighthouse_desktop_results.png) and [Mobile](readme_images/lighthouse_mobile_results.png) ([Screenshot_Mobile](readme_images/lighthouse_mobile_test_scrshot.png)).
+The website has been tested in all its parts and works as intended. It is fully responsive and supports all screen sizes down to 360px. The tests were conducted using the inspector of Google Chrome. It scored high results with Lighthouse both on [Desktop](readme_images/lighthouse_desktop_results.png) and [Mobile](readme_images/lighthouse_mobile_results.png) ([Screenshot_Mobile](readme_images/lighthouse_mobile_test_scrshot.png)).
 The elements adapt and change their appearence according to the aspect ratio of the screen without breaking the design.
-
 
 
 
@@ -104,18 +86,18 @@ The elements adapt and change their appearence according to the aspect ratio of 
 - JS
   - 25 warning were returned when passing through [JSHint](readme_assets/JSHint_warnings.md)
 - CSS
-  - 
+  - No errors were returned when passing through the official [W3C validator]()
 - HTML
-  -
+  - No errors were returned when passing through the official [W3C CSS validator]()
 
 ### Unfixed
 
-- Lighthouse spots undeclared width and hight for some images. Putting the right aspect-ratio (checked on Photoshop) it says that the image is distort (but infact was not) so I decided to left them undeclared because it scores higher results.
-In future the images will be converted to WebP. The jpg were also tinyfied using [tinyPNG](https://tinypng.com/)
+- JSHint spotts 3 Undeclared variables which are in reality 3 global variables
+
+
+
 
 ## Deployment
-
-
 
 - The site was deployed to GitHub pages. The steps to deploy are as follows: 
   - In the GitHub repository, navigate to the Settings tab 
@@ -123,18 +105,19 @@ In future the images will be converted to WebP. The jpg were also tinyfied using
   - On Build and Deployment section select the main branch and click on save.
   - Once saved the url of the page will appear on top of the page. 
 
-The live link can be found here - https://fabi8bit.github.io/theboardingschool/
+The live link can be found here - https://fabi8bit.github.io/clubbub/
 
 
 ## Credits 
 
-The photos on this website are extracted from my private photo collection except for the [freestyle](assets/images/freestyle-thumb-small.jpg) and [move_around](assets/images/move-thumb-small.jpg) photos, which are available for free download from [pexels](https://www.pexels.com/search/longboard/).
+All the code was written from scratch combining the notion aquired during the lesson and the walkthrough project "Love for Math". Though I researched on line for some code snipet:
+- background pattern (https://www.toptal.com/designers/subtlepatterns/watercolor-pattern/)
+- pop-up (https://www.youtube.com/watch?v=AF6vGYIyV8M)
+- set html attribute using JavaScript (https://www.javascripttutorial.net/dom/attributes/set-the-value-of-an-attribute/)
+
+
 
 ### Content and technique
 
-- All the text are invented and created from scratch
-- Advice on how to use flex-box where taken from this [tutorial](https://www.youtube.com/watch?v=fYq5PXgSsbE&t=17s)
-- The technique for reordering nav menu was taken from stackoverflow [here](https://stackoverflow.com/questions/11243002/css-float-right-without-changing-order)
-- The technique for the spinning logo was taken from [here](https://codepen.io/teerapuch/pen/vLJXeR)
-- Advice to create the photo gallery was taken from [here](https://blog.logrocket.com/responsive-image-gallery-css-flexbox/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+- For the copyright part, name included I took advantage of ChatGPT (Artificial Intelligence) inquanto not relevant to the scope of this project.
+- The icons in the buttons were taken from [Font Awesome](https://fontawesome.com/)
