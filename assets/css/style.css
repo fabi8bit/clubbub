@@ -3,9 +3,6 @@ body {
     padding: 0;
     margin: 0;
     text-align: center;
-    /* background-image: url("assets/images/watercolor_pattern.webp");
-    background-repeat: repeat;
-    background-size: 1600px 840px; */
 }
 
 .heading {
@@ -20,11 +17,9 @@ body {
 }
 
 .logo {
-    /* width: 85%; */
     width: 306px;
     height: 153px;
 }
-
 
 #logo-claim {
     margin:auto;
@@ -41,10 +36,6 @@ body {
     margin-bottom: 30px;
     border-radius: 20px;
     height: 50vh;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
 }
 
 .form-container{
@@ -53,8 +44,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    
 }
 
 .form-item {
@@ -62,12 +51,9 @@ body {
     height: 50px;
     border-radius: 10px;
     font-size: x-large;
-    
-
 }
 
 .wizard {
-    /* background: rgb(32, 0, 70); */
     background-image: url('../images/pattMagic.webp'); 
     width: 85%;
     max-width: 850px;
@@ -77,8 +63,9 @@ body {
     margin-bottom: 30px;
     border-radius: 20px;
     padding: 10px;
-    
 }
+
+
 
 /*make disappear elements*/
 
@@ -93,8 +80,9 @@ body {
     align-items: center;
 }
 
-/* Buttons */
 
+
+/* Buttons */
 
 .buttons {
     border-radius: 10px;
@@ -158,6 +146,8 @@ body {
     background-color: rgb(215, 0, 118);
 }
 
+
+
 /* Instructions */
 
 #instructions {
@@ -202,6 +192,8 @@ body {
     font-size: medium;
 }
 
+
+
 /* Story Area */
 
 .story {
@@ -236,6 +228,8 @@ body {
     width: 85%;
 }
 
+
+
 /*Resize for screen 1000px down*/
 
 @media screen and (max-width: 768px) {
@@ -255,6 +249,8 @@ body {
     }
 
 }
+
+
 
 /*Resize for screen 500px down*/
 

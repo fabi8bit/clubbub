@@ -92,7 +92,7 @@ function buttonScroll(buttonType) {
         dataSelector = 0;
         thisButton.setAttribute('data-selector', dataSelector);
     } else {
-        thisButton.setAttribute('data-selector', dataSelector); // setAttribute from this tutorial https://www.javascripttutorial.net/dom/attributes/set-the-value-of-an-attribute/
+        thisButton.setAttribute('data-selector', dataSelector);
     }
     thisButton.innerHTML = thisArr[dataSelector];
 }
@@ -111,7 +111,6 @@ function createStory() {
     //put all the stories invisible before the selected one (storyId) will be set to visible 
     let stories = document.getElementsByClassName('stories');
     for (let i = 0; i < stories.length; i++) {
-
         stories[i].classList.add("display-none");
         stories[i].classList.remove("display-all");
     }
@@ -121,7 +120,7 @@ function createStory() {
 }
 
 /**
- * this function is used to display or hide the controls and the story section
+ * this function is used to display or hide the controls and the story sections
  * @param {set the wizard buttons visible or invisible} dispWiz 
  * @param {set the Story visible or invisible} dispStory 
  */
@@ -134,6 +133,11 @@ function displayStory(dispWiz, dispStory) {
     document.getElementById("story-area").classList.add(dispStory);
 }
 
+/**
+ * this function is used to display or hide the the instructions
+ * @param {set the wizard buttons visible or invisible} dispWiz 
+ * @param {set the instructions visible or invisible} dispInstr 
+ */
 function displayInstruction(dispInstr, dispWiz) {
     document.getElementById("wizard-area").classList.remove(dispWiz);
     document.getElementById("wizard-area").classList.remove(dispInstr);
