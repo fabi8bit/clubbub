@@ -137,8 +137,8 @@ function displayStory(dispWiz, dispStory) {
 function displayInstruction(dispInstr, dispWiz) {
     document.getElementById("wizard-area").classList.remove(dispWiz);
     document.getElementById("wizard-area").classList.remove(dispInstr);
-    document.getElementById("instruction").classList.remove(dispWiz);
-    document.getElementById("instruction").classList.remove(dispInstr);
-    document.getElementById("instruction").classList.add(dispInstr);
+    document.getElementById("instructions").classList.remove(dispWiz);
+    document.getElementById("instructions").classList.remove(dispInstr);
+    document.getElementById("instructions").classList.add(dispInstr);
     document.getElementById("wizard-area").classList.add(dispWiz);
 }
