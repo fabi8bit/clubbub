@@ -20,8 +20,11 @@ body {
 }
 
 .logo {
-    width: 85%;
+    /* width: 85%; */
+    width: 306px;
+    height: 153px;
 }
+
 
 #logo-claim {
     margin:auto;
