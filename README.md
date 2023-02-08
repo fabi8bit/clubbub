@@ -2,6 +2,7 @@
 
 Club Bub is an interactive story creator. It is designed for kids and emulates the behaviour of a real toy called ["Once upon a time" by Clementoni.](https://en.clementoni.com/collections/the-best-loved/products/once-upon-a-time) The original toy is conceived, designed, and developed in Italy.
 ![Original Toy](readme_assets/readme_imgs/clementoni_toy.webp)
+
 After the login page you'll be presented to the main interface of the game. By clicking on each of the three top buttons displayed, the user will be able to decide the type of character (animal, super hero, astronauts), the type of style (friendship, war, magic), and the type of setting (Space, Nature, City) for the story. Each combination will lead to a different story and a world of fairy tales. The game is an interactive storyteller to create and read up to 27 different stories. At the moment not all stories are available. When stories are unavailable, the text "Story not available" is displayed.
 
 ![Responsive Mockup](readme_assets/readme_imgs/club-bub_responsive.webp)
