@@ -26,6 +26,8 @@ body {
     padding: 15px;
 }
 
+/* login section */
+
 #login {
     background-image: url('../images/pattMagic.webp');
     width: 85%;
@@ -52,6 +54,8 @@ body {
     border-radius: 10px;
     font-size: x-large;
 }
+
+/* wizard Area*/
 
 .wizard {
     background-image: url('../images/pattMagic.webp'); 
