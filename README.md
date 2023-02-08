@@ -1,7 +1,7 @@
 # Club Bub
 
 Club Bub is an interactive story creator. It is designed for kids and emulates the behaviour of a real toy called ["Once upon a time" by Clementoni.](https://en.clementoni.com/collections/the-best-loved/products/once-upon-a-time) The original toy is conceived, designed, and developed in Italy.
-
+![Original Toy](readme_assets/readme_imgs/clementoni_toy.webp)
 After the login page you'll be presented to the main interface of the game. By clicking on each of the three top buttons displayed, the user will be able to decide the type of character (animal, super hero, astronauts), the type of style (friendship, war, magic), and the type of setting (Space, Nature, City) for the story. Each combination will lead to a different story and a world of fairy tales. The game is an interactive storyteller to create and read up to 27 different stories. At the moment not all stories are available. When stories are unavailable, the text "Story not available" is displayed.
 
 ![Responsive Mockup](readme_assets/readme_imgs/club-bub_responsive.webp)
@@ -48,11 +48,15 @@ This website features only one page. The Html is divided into sections that are 
 
     - The instructions button displays the instructions on how to play the game
 
+    ![instruction button](readme_assets/readme_imgs/instructionButton.webp)
+
     - _Choice Area_:
 
       - Character: The user can choose amongst three types of character: Animal, Super-Hero, Human
       - Style: The user can choose amongst three types of style: Friendship, War, Magic
       - Setting: The user can choose amongst three types of settings: Space, Nature, City
+
+      ![choice area](readme_assets/readme_imgs/choiceArea.webp)
 
     - _Controls Area_
 
@@ -60,7 +64,15 @@ This website features only one page. The Html is divided into sections that are 
       - The shuffle button creates a random combination of the story elements
       - The Play button displays the story selected according to the choice of the user and hides the Wizard Area
 
+      ![Controls Area](readme_assets/readme_imgs/controlsArea.webp)
+
+Wizard Area - Mobile Screenshot
+
 ![wizard-area](readme_assets/readme_imgs/mobile-wizard-ss.webp)
+
+Wizard Area - Desktop Screenshot
+
+![wizard-area-desktop](readme_assets/readme_imgs/wizard-dsktop.webp)
 
 
 
@@ -68,8 +80,13 @@ This website features only one page. The Html is divided into sections that are 
 
   - This area is where the chosen story is displayed and it is revealed after clicking on the play button. It also features a reset button to bring the user back to the wizard area
 
+Story Area - Mobile Screenshot
+
 ![story-area](readme_assets/readme_imgs/mobile-story-display.webp)
 
+Story Area - Desktop Screenshot
+
+![story-area](readme_assets/readme_imgs/storyArea-desktop.webp)
 
 
 
